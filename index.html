@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confesiones</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 font-open-sans text-gray-200">
+  <header class="bg-gray-800 text-gray-200 p-4 text-center">
+    <h1 class="text-4xl font-bold">Confesiones</h1>
+    <p class="text-lg">Comparte tus secretos de forma anónima</p>
+  </header>
+  <main class="max-w-4xl mx-auto p-4 mt-4">
+    <section class="bg-gray-800 p-4 rounded shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Sube tu confesión</h2>
+      <form id="confession-form">
+        <textarea id="confession-text" class="w-full p-2 border border-gray-600 rounded bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Escribe tu confesión aquí..."></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Subir confesión</button>
+      </form>
+    </section>
+    <section class="mt-4" id="confessions-container">
+      <!-- Aquí se mostrarán las confesiones -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
